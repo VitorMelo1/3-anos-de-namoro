@@ -170,8 +170,8 @@ html, body {
   animation-fill-mode: forwards;
   z-index: 1;
   background: #c9204b;
-  top: "";
-  height: "";
+  top: 0;
+  height: 75px;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
@@ -551,3 +551,198 @@ html, body {
     box-shadow: 0px 0px 60px #f594b8;
   }
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 320px;
+    height: 960px;
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin: 0;
+  }
+  .container .glass {
+    height: 840px;
+    width: 500px;
+    left: -90px;
+    top: -200px;
+  }
+  .container .glass:after, .container .glass:before {
+    height: 160px;
+    top: 360px;
+  }
+  .container .glow {
+    width: 340px;
+    height: 340px;
+    left: -85px;
+    top: -85px;
+  }
+  .container .rose-petals > div {
+    width: 90px;
+    height: 160px;
+  }
+  .container .rose-petals > div:nth-child(1) {
+    left: 40px;
+    top: -20px;
+  }
+  .container .rose-petals > div:nth-child(2), .container .rose-petals > div:nth-child(4), .container .rose-petals > div:nth-child(6) {
+    left: 0;
+  }
+  .container .rose-petals > div:nth-child(3), .container .rose-petals > div:nth-child(5), .container .rose-petals > div:nth-child(7) {
+    left: 80px;
+  }
+  .container .rose-leaves > div:nth-last-child(1) {
+    width: 110px;
+    height: 60px;
+    top: 120px;
+    left: 30px;
+  }
+  .container .rose-leaves > div:nth-child(1) {
+    width: 12px;
+    height: 480px;
+    top: 160px;
+    left: 80px;
+  }
+  .container .thorns > div {
+    width: 60px;
+    height: 60px;
+    top: 200px;
+    left: 20px;
+  }
+  .container .thorns > div:nth-child(2) {
+    top: 300px;
+    left: 90px;
+  }
+  .container .thorns > div:nth-child(3) {
+    top: 360px;
+  }
+  .container .thorns > div:nth-child(4) {
+    top: 440px;
+    left: 120px;
+  }
+  .container .sparkles > div {
+    width: 8px;
+    height: 8px;
+  }
+  .container .sparkles > div:nth-child(1) {
+    left: 200px;
+  }
+  .container .sparkles > div:nth-child(2) {
+    left: 252px;
+  }
+  .container .sparkles > div:nth-child(3) {
+    left: 330px;
+  }
+  .container .sparkles > div:nth-child(4) {
+    left: -52px;
+  }
+  .container .sparkles > div:nth-child(5) {
+    left: 96px;
+  }
+  .container .sparkles > div:nth-child(6) {
+    left: 300px;
+  }
+  .container .sparkles > div:nth-child(7) {
+    left: 168px;
+  }
+  .container .sparkles > div:nth-child(8) {
+    left: 150px;
+  }
+  .container .sparkles > div:nth-child(9) {
+    left: -16px;
+  }
+  .container .rose-petals > div:nth-child(2) {
+    top: 20px;
+    height: 140px;
+  }
+  .container .rose-petals > div:nth-child(3) {
+    top: 20px;
+    height: 140px;
+  }
+  .container .rose-petals > div:nth-child(4) {
+    top: 10px;
+    height: 150px;
+  }
+  .container .rose-petals > div:nth-child(5) {
+    top: 10px;
+    height: 150px;
+  }
+  .container .rose-petals > div:nth-child(6) {
+    top: 0;
+    height: 160px;
+  }
+  .container .rose-petals > div:nth-child(7) {
+    top: 0;
+    height: 160px;
+  }
+  .container .glass:after, .container .glass:before {
+    height: 160px;
+    top: 360px;
+  }
+  .container .glow {
+    width: 340px;
+    height: 340px;
+    left: -85px;
+    top: -85px;
+  }
+  .container .rose-leaves > div:nth-last-child(1) {
+    width: 110px;
+    height: 60px;
+    top: 120px;
+    left: 30px;
+  }
+  .container .rose-leaves > div:nth-child(1) {
+    width: 12px;
+    height: 480px;
+    top: 160px;
+    left: 80px;
+  }
+  .container .thorns > div {
+    width: 60px;
+    height: 60px;
+    top: 200px;
+    left: 20px;
+  }
+  .container .thorns > div:nth-child(2) {
+    top: 300px;
+    left: 90px;
+  }
+  .container .thorns > div:nth-child(3) {
+    top: 360px;
+  }
+  .container .thorns > div:nth-child(4) {
+    top: 440px;
+    left: 120px;
+  }
+  .container .sparkles > div {
+    width: 8px;
+    height: 8px;
+  }
+  .container .sparkles > div:nth-child(1) {
+    left: 200px;
+  }
+  .container .sparkles > div:nth-child(2) {
+    left: 252px;
+  }
+  .container .sparkles > div:nth-child(3) {
+    left: 330px;
+  }
+  .container .sparkles > div:nth-child(4) {
+    left: -52px;
+  }
+  .container .sparkles > div:nth-child(5) {
+    left: 96px;
+  }
+  .container .sparkles > div:nth-child(6) {
+    left: 300px;
+  }
+  .container .sparkles > div:nth-child(7) {
+    left: 168px;
+  }
+  .container .sparkles > div:nth-child(8) {
+    left: 150px;
+  }
+  .container .sparkles > div:nth-child(9) {
+    left: -16px;
+  }
+  }
