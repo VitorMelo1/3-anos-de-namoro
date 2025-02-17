@@ -6,39 +6,6 @@ body {
   overflow: hidden;
 }
 
-.Grup{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-right: 15px;
-}
-
-.Titulo {
-  color: #b81b43;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.botaoEntrada {
-  text-align: center;
-  margin-top: 300px;
-}
-
-.botao {
-  background-color: #b81b43;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Dancing Script', cursive;
-  transition: 0.3s;
-  text-decoration: none;
-  font-size: 20px;
-}
-
 .container {
   width: 100px;
   height: 300px;
@@ -222,8 +189,8 @@ body {
   animation-fill-mode: forwards;
   z-index: 1;
   background: #c9204b;
-  top: 0;
-  height: 75px;
+  top: "";
+  height: "";
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
@@ -403,7 +370,7 @@ body {
   animation-delay: 1s;
 }
 
-@-webkit-keyframes openRose2 {
+@-webkit-keyframes sparkle {
   50% {
     opacity: 1;
   }
@@ -521,6 +488,47 @@ body {
     top: 210px;
     left: -30px;
   }
+}
+
+@keyframes improvedAnimation {
+  0% {
+    transform: rotate(0deg) scale(1);
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+
+  25% {
+    transform: rotate(-45deg) scale(1.1);
+    top: 40px;
+    left: 80px;
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: rotate(-90deg) scale(1.2);
+    top: 80px;
+    left: 160px;
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: rotate(-135deg) scale(1.1);
+    top: 120px;
+    left: 240px;
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: rotate(-180deg) scale(1);
+    top: 160px;
+    left: 320px;
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: improvedAnimation 3s ease-in-out infinite;
 }
 
 @-webkit-keyframes openRose3 {
@@ -657,249 +665,117 @@ body {
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 320px;
-    height: 960px;
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    margin: 0;
+    width: 150px;
+    height: 450px;
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
   }
 
   .container .glass {
-    height: 840px;
-    width: 500px;
-    left: -90px;
-    top: -200px;
-  }
-
-  .container .glass:after,
-  .container .glass:before {
-    height: 160px;
-    top: 360px;
+    height: 630px;
+    width: 375px;
+    left: -120px;
+    top: -150px;
   }
 
   .container .glow {
-    width: 340px;
-    height: 340px;
-    left: -85px;
-    top: -85px;
+    width: 255px;
+    height: 255px;
+    left: -60px;
+    top: -60px;
   }
 
   .container .rose-petals>div {
-    width: 90px;
-    height: 160px;
-  }
-
-  .container .rose-petals>div:nth-child(1) {
-    left: 40px;
-    top: -20px;
-  }
-
-  .container .rose-petals>div:nth-child(2),
-  .container .rose-petals>div:nth-child(4),
-  .container .rose-petals>div:nth-child(6) {
-    left: 0;
-  }
-
-  .container .rose-petals>div:nth-child(3),
-  .container .rose-petals>div:nth-child(5),
-  .container .rose-petals>div:nth-child(7) {
-    left: 80px;
+    width: 67.5px;
+    height: 120px;
   }
 
   .container .rose-leaves>div:nth-last-child(1) {
-    width: 110px;
-    height: 60px;
-    top: 120px;
-    left: 30px;
+    width: 82.5px;
+    height: 45px;
+    top: 90px;
+    left: 22.5px;
   }
 
   .container .rose-leaves>div:nth-child(1) {
-    width: 12px;
-    height: 480px;
-    top: 160px;
-    left: 80px;
-  }
-
-  .container .thorns>div {
-    width: 60px;
-    height: 60px;
-    top: 200px;
-    left: 20px;
-  }
-
-  .container .thorns>div:nth-child(2) {
-    top: 300px;
-    left: 90px;
-  }
-
-  .container .thorns>div:nth-child(3) {
-    top: 360px;
-  }
-
-  .container .thorns>div:nth-child(4) {
-    top: 440px;
-    left: 120px;
-  }
-
-  .container .sparkles>div {
-    width: 8px;
-    height: 8px;
-  }
-
-  .container .sparkles>div:nth-child(1) {
-    left: 200px;
-  }
-
-  .container .sparkles>div:nth-child(2) {
-    left: 252px;
-  }
-
-  .container .sparkles>div:nth-child(3) {
-    left: 330px;
-  }
-
-  .container .sparkles>div:nth-child(4) {
-    left: -52px;
-  }
-
-  .container .sparkles>div:nth-child(5) {
-    left: 96px;
-  }
-
-  .container .sparkles>div:nth-child(6) {
-    left: 300px;
-  }
-
-  .container .sparkles>div:nth-child(7) {
-    left: 168px;
-  }
-
-  .container .sparkles>div:nth-child(8) {
-    left: 150px;
-  }
-
-  .container .sparkles>div:nth-child(9) {
-    left: -16px;
-  }
-
-  .container .rose-petals>div:nth-child(2) {
-    top: 20px;
-    height: 140px;
-  }
-
-  .container .rose-petals>div:nth-child(3) {
-    top: 20px;
-    height: 140px;
-  }
-
-  .container .rose-petals>div:nth-child(4) {
-    top: 10px;
-    height: 150px;
-  }
-
-  .container .rose-petals>div:nth-child(5) {
-    top: 10px;
-    height: 150px;
-  }
-
-  .container .rose-petals>div:nth-child(6) {
-    top: 0;
-    height: 160px;
-  }
-
-  .container .rose-petals>div:nth-child(7) {
-    top: 0;
-    height: 160px;
-  }
-
-  .container .glass:after,
-  .container .glass:before {
-    height: 160px;
-    top: 360px;
-  }
-
-  .container .glow {
-    width: 340px;
-    height: 340px;
-    left: -85px;
-    top: -85px;
-  }
-
-  .container .rose-leaves>div:nth-last-child(1) {
-    width: 110px;
-    height: 60px;
+    width: 9px;
+    height: 345px;
     top: 120px;
-    left: 30px;
-  }
-
-  .container .rose-leaves>div:nth-child(1) {
-    width: 12px;
-    height: 480px;
-    top: 160px;
-    left: 80px;
+    left: 60px;
   }
 
   .container .thorns>div {
-    width: 60px;
-    height: 60px;
-    top: 200px;
-    left: 20px;
-  }
-
-  .container .thorns>div:nth-child(2) {
-    top: 300px;
-    left: 90px;
-  }
-
-  .container .thorns>div:nth-child(3) {
-    top: 360px;
-  }
-
-  .container .thorns>div:nth-child(4) {
-    top: 440px;
-    left: 120px;
+    width: 45px;
+    height: 45px;
+    top: 150px;
+    left: 15px;
   }
 
   .container .sparkles>div {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   }
 
-  .container .sparkles>div:nth-child(1) {
-    left: 200px;
+
+  @-webkit-keyframes sparkle {
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      bottom: 450px;
+    }
   }
 
-  .container .sparkles>div:nth-child(2) {
-    left: 252px;
+  @-moz-keyframes sparkle {
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      bottom: 450px;
+    }
   }
 
-  .container .sparkles>div:nth-child(3) {
-    left: 330px;
+  @-ms-keyframes sparkle {
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      bottom: 450px;
+    }
   }
 
-  .container .sparkles>div:nth-child(4) {
-    left: -52px;
+  @keyframes sparkle {
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      bottom: 450px;
+    }
   }
 
-  .container .sparkles>div:nth-child(5) {
-    left: 96px;
-  }
+  @keyframes openRose2 {
+    50% {
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      top: 80px;
+      left: 100px;
+    }
 
-  .container .sparkles>div:nth-child(6) {
-    left: 300px;
-  }
-
-  .container .sparkles>div:nth-child(7) {
-    left: 168px;
-  }
-
-  .container .sparkles>div:nth-child(8) {
-    left: 150px;
-  }
-
-  .container .sparkles>div:nth-child(9) {
-    left: -16px;
+    100% {
+      -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+      -webkit-transform: rotate(-60deg);
+      transform: rotate(-60deg);
+      top: 359px;
+      left: -30px;
+    }
   }
 }
