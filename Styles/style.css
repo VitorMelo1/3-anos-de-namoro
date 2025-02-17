@@ -5,7 +5,40 @@ body {
   background: #000;
   overflow: hidden;
 }
+.title{
+  text-align: center;
+  color: #b81b43;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 100px;
+  text-shadow: #9e183a 0px 0px 40px;
+}
+.transition-button{
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: 3px solid #9e183a;
+  border-radius: 15px;
+  font-size: 25px;
+  box-shadow: #9e183a 0px 0px 40px;
+  background: transparent;
+  color: #9e183a;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
+.transition-button:hover{
+  background: #b81b43;
+  color: #f594b8;
+}
+
+.transition-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .container {
   width: 100px;
   height: 300px;
@@ -664,60 +697,69 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
-    width: 150px;
-    height: 450px;
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+    .container {
+    width: 120px;
+    height: 360px;
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
 
   .container .glass {
-    height: 630px;
-    width: 375px;
-    left: -120px;
-    top: -150px;
+    height: 504px;
+    width: 300px;
+    left: -96px;
+    top: -120px;
   }
 
   .container .glow {
-    width: 255px;
-    height: 255px;
-    left: -60px;
-    top: -60px;
+    width: 204px;
+    height: 204px;
+    left: -48px;
+    top: -48px;
   }
 
   .container .rose-petals>div {
-    width: 67.5px;
-    height: 120px;
+    width: 54px;
+    height: 96px;
   }
 
   .container .rose-leaves>div:nth-last-child(1) {
-    width: 82.5px;
-    height: 45px;
-    top: 90px;
-    left: 22.5px;
+    width: 66px;
+    height: 36px;
+    top: 72px;
+    left: 18px;
   }
 
   .container .rose-leaves>div:nth-child(1) {
-    width: 9px;
-    height: 345px;
-    top: 120px;
-    left: 60px;
+    width: 7.2px;
+    height: 276px;
+    top: 96px;
+    left: 48px;
   }
 
   .container .thorns>div {
-    width: 45px;
-    height: 45px;
-    top: 150px;
-    left: 15px;
+    width: 36px;
+    height: 36px;
+    top: 120px;
+    left: 12px;
   }
 
   .container .sparkles>div {
-    width: 6px;
-    height: 6px;
+    width: 4.8px;
+    height: 4.8px;
   }
 
+  .container .title {
+    top: -40px;
+    font-size: 20px;
+  }
+
+  .container .action-button {
+    bottom: -40px;
+    font-size: 14px;
+  }
 
   @-webkit-keyframes sparkle {
     50% {
