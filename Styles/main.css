@@ -1,5 +1,5 @@
 @import url('base/variables.css');
 @import url('Lyaut/header.css');
 @import url('Lyaut/footer.css');
-@import url('Styles/page/home.css');
-@import url('Styles/Animacao/coracao.css');
+@import url('page/home.css');
+@import url('Animacao/coracao.css');
