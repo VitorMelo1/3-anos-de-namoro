@@ -1,0 +1,46 @@
+@import url('/Styles/base/variables.css');
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-background);
+}
+.sobre-nos {
+    background: #1a1a1a; /* Fundo escuro para combinar */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    gap: 30px;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid gold; /* Destaque bonito */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.texto h2 {
+    font-size: 28px;
+    color: gold;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}

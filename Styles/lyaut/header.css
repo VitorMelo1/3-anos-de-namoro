@@ -1,0 +1,74 @@
+@import url('/Styles/base/variables.css');
+.romantic-header {
+    background: linear-gradient(135deg, #E0E0E0, #e69090);
+    color: #8B0000;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 35px 0;
+    border-radius: 0 0 10px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 15px rgba(245, 223, 226, 0.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.img{
+    margin-left: 25px;
+}
+.texto-header{
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor-texto-primaria);
+}
+.menu-hamburguer{
+    display: none;
+}    
+@media only screen and (max-width: 600px) {
+    .texto-PC{
+        display: none;
+    }
+    .menu-hamburguer{
+        display: flex;
+        width: auto;
+        
+        align-items: center;
+    }
+    .menu-hamburguer img{
+        height: 90px;
+        width: auto;
+    }
+    .container__rotulo-menu{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .texto-menu{
+        color: var(--cor-texto-primaria);
+    }
+    .lista-menu{
+        display: none;
+    }
+    .lista-menu__link{
+        text-decoration: none;
+        color: var(--cor-texto-primaria);
+    }
+}
+
+
+
+    
+
+
