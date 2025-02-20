@@ -4,7 +4,7 @@
     height: 85vh;
     overflow: hidden;
     display: flex;
-    background-image: url(/src/utils/background/PequenoPrincipe.png);
+    background-image: url(src/utils/background/PequenoPrincipe.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -12,7 +12,7 @@
     width: 80px;
     height: 80px;
     /* Caso queira subistituir as estrelas por coracao */
-    background-image: url(/src/utils/Icons/Stars.png);
+    background-image: url(src/utils/Icons/Stars.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
